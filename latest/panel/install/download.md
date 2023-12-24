@@ -9,8 +9,8 @@ panel will run and then move ourselves into that newly created folder.
 Below is an example of how to perform this operation.
 
 ```bash
-mkdir -p /var/www/jexactyl
-cd /var/www/jexactyl
+mkdir -p /var/www/foxxnode
+cd /var/www/foxxnode
 ```
 
 ***
@@ -22,7 +22,7 @@ Then, you can extract it using the `tar` command and assign permissions using `c
 to the `storage/*` and `bootstrap/cache` directories in order to allow the site to cache objects and load faster.
 
 ```bash
-curl -Lo panel.tar.gz https://github.com/jexactyl/jexactyl/releases/latest/download/panel.tar.gz
+curl -Lo panel.tar.gz https://github.com/foxxnode/foxxnode/releases/latest/download/panel.tar.gz
 tar -xzvf panel.tar.gz
 chmod -R 755 storage/* bootstrap/cache/
 ```

@@ -1,5 +1,5 @@
 # Install Dependencies
-You'll need to install the following dependencies in order to run and use Jexactyl:
+You'll need to install the following dependencies in order to run and use foxxnode:
 
 ***
 

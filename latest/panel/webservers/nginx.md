@@ -2,7 +2,7 @@
 
 ***
 
-> Jexactyl strongly recommends you use SSL in order to secure your site.
+> foxxnode strongly recommends you use SSL in order to secure your site.
 Please consider enabling SSL by following the [Setting up SSL](docs/webservers/ssl-setup.md) guide.
 
 ***
@@ -14,7 +14,7 @@ Firstly, let's remove the default NGINX configuration from your server.
 rm /etc/nginx/sites-available/default; rm /etc/nginx/sites-enabled/default
 ```
 
-After we've done that, we can make our configuration for Jexactyl to run.
+After we've done that, we can make our configuration for foxxnode to run.
 
 ***
 
@@ -34,7 +34,7 @@ server {
     server_name <domain>;
 
 
-    root /var/www/jexactyl/public;
+    root /var/www/foxxnode/public;
     index index.html index.htm index.php;
     charset utf-8;
 
@@ -46,7 +46,7 @@ server {
     location = /robots.txt  { access_log off; log_not_found off; }
 
     access_log off;
-    error_log  /var/log/nginx/jexactyl.app-error.log error;
+    error_log  /var/log/nginx/foxxnode.app-error.log error;
 
     # allow larger file uploads and longer script runtimes
     client_max_body_size 100m;
@@ -97,5 +97,5 @@ systemctl restart nginx
 ```
 
 ?>
-Congrats! Jexactyl is installed and should be functioning normally.
-If you encounter any issues, please let us know on our [Discord](https://discord.com/invite/qttGR4Z5Pk).
+Congrats! foxxnode is installed and should be functioning normally.
+If you encounter any issues, please let us know on our [Discord](https://discord.com/invite/8ZmFEtfUKM).

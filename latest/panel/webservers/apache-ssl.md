@@ -9,7 +9,7 @@ Firstly, let's remove the default Apache configuration from your server.
 a2dissite 000-default.conf
 ```
 
-After we've done that, we can make our configuration for Jexactyl to run.
+After we've done that, we can make our configuration for foxxnode to run.
 
 ***
 
@@ -35,14 +35,14 @@ Make a file called `panel.conf` in `/etc/apache2/sites-available` and insert the
 
 <VirtualHost *:443>
   ServerName <domain>
-  DocumentRoot "/var/www/jexactyl/public"
+  DocumentRoot "/var/www/foxxnode/public"
 
   AllowEncodedSlashes On
   
   php_value upload_max_filesize 100M
   php_value post_max_size 100M
 
-  <Directory "/var/www/jexactyl/public">
+  <Directory "/var/www/foxxnode/public">
     Require all granted
     AllowOverride all
   </Directory>
@@ -62,17 +62,17 @@ Firstly, let's link the file we've made to the directory which Apache uses for c
 ln -s /etc/apache2/sites-available/panel.conf /etc/apache2/sites-enabled/panel.conf
 ```
 
-Then, we'll apply the settings Apache needs to host Jexactyl.
+Then, we'll apply the settings Apache needs to host foxxnode.
 ```bash
 sudo a2enmod rewrite
 sudo a2enmod ssl
 ```
 
-Finally, we'll restart Apache in order to bring Jexactyl online.
+Finally, we'll restart Apache in order to bring foxxnode online.
 ```bash
 systemctl restart apache2
 ```
 
 ?>
-Congrats! Jexactyl is installed and should be functioning normally.
-If you encounter any issues, please let us know on our [Discord](https://discord.com/invite/qttGR4Z5Pk).
+Congrats! foxxnode is installed and should be functioning normally.
+If you encounter any issues, please let us know on our [Discord](https://discord.com/invite/8ZmFEtfUKM).

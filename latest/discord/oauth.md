@@ -1,9 +1,9 @@
-# Configure Discord for Jexactyl
+# Configure Discord for foxxnode
 
 ***
 
-This guide will show you how to link a Discord auth application to Jexactyl, which allows
-users to authenticate with Jexactyl via their Discord account.
+This guide will show you how to link a Discord auth application to foxxnode, which allows
+users to authenticate with foxxnode via their Discord account.
 
 ***
 
@@ -26,11 +26,11 @@ You will now need to configure Redirects so Discord knows where to point your us
 You can do this by clicking the 'Add Redirect' button and adding these two URLs.
 ![Discord Redirect image](../../public/images/discord_redirect.png)
 
-### Add Client ID and Secret to Jexactyl
+### Add Client ID and Secret to foxxnode
 
-Finally, head over to Jexactyl's 'User Registration' settings page and fill in your Client ID and Secret
+Finally, head over to foxxnode's 'User Registration' settings page and fill in your Client ID and Secret
 for Discord. Make sure to enable the registration module, otherwise users will not be able to authenticate!
-![Enable Jexactyl image](../../public/images/discord_jexactyl.png)
+![Enable foxxnode image](../../public/images/discord_foxxnode.png)
 
 ### Test your Application
 
@@ -38,5 +38,5 @@ Give it a whirl and try to log in via Discord. If you encounter an error like `i
 step 3 again and make sure your settings are 100% correct and valid.
 
 ?>
-Congrats! Jexactyl Discord Oauth should be functioning normally.
-If you encounter any issues, please let us know on our [Discord](https://discord.com/invite/qttGR4Z5Pk).
+Congrats! foxxnode Discord Oauth should be functioning normally.
+If you encounter any issues, please let us know on our [Discord](https://discord.com/invite/8ZmFEtfUKM).

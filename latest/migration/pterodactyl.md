@@ -2,9 +2,9 @@
 
 ***
 
-Using this guide, you'll be able to upgrade to Jexactyl from Pterodactyl v1.x.
+Using this guide, you'll be able to upgrade to foxxnode from Pterodactyl v1.x.
 
-!> Pterodactyl v0.7 is EOL (end-of-life) and is not supported for migration by Jexactyl.
+!> Pterodactyl v0.7 is EOL (end-of-life) and is not supported for migration by foxxnode.
 If you're running v0.7, please upgrade from Pterodactyl v0.7 to Pterodactyl v1.0 before
 following this migration guide.
 
@@ -39,14 +39,14 @@ php artisan down
 
 ***
 
-### Download Jexactyl
+### Download foxxnode
 
-After your backup is complete and the Panel is offline, we'll download the Jexactyl files
+After your backup is complete and the Panel is offline, we'll download the foxxnode files
 and overwrite the existing Pterodactyl files.
 
 ```bash
-# Download the latest Jexactyl release using CURL.
-curl -L -o panel.tar.gz https://github.com/jexactyl/jexactyl/releases/latest/download/panel.tar.gz
+# Download the latest foxxnode release using CURL.
+curl -L -o panel.tar.gz https://github.com/foxxnode/foxxnode/releases/latest/download/panel.tar.gz
 
 # Download the updated files and delete the archive file.
 tar -xzvf panel.tar.gz && rm -f panel.tar.gz
@@ -86,7 +86,7 @@ php artisan optimize:clear
 
 ### Update database migrations
 
-Jexactyl includes new features and functions that require you to migrate to your database.
+foxxnode includes new features and functions that require you to migrate to your database.
 Luckily, this is a simple process which only involves running one command:
 
 ```bash
@@ -130,5 +130,5 @@ php artisan up
 ```
 
 ?>
-Congrats! You have migrated to Jexactyl and everything should be functioning normally.
-If you encounter any issues, please let us know on our [Discord](https://discord.com/invite/qttGR4Z5Pk).
+Congrats! You have migrated to foxxnode and everything should be functioning normally.
+If you encounter any issues, please let us know on our [Discord](https://discord.com/invite/8ZmFEtfUKM).

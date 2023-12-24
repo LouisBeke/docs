@@ -10,9 +10,9 @@ crontab -e # Pick '1' if prompted
 Then, paste this line and exit after:
 
 ```bash
-0 0 * * * php /var/www/jexactyl/artisan p:schedule:renewal >> /dev/null 2>&1
+0 0 * * * php /var/www/foxxnode/artisan p:schedule:renewal >> /dev/null 2>&1
 ```
 
 ?>
 Congrats! Renewals have been configured and should be functioning normally.
-If you encounter any issues, please let us know on our [Discord](https://discord.com/invite/qttGR4Z5Pk).
+If you encounter any issues, please let us know on our [Discord](https://discord.com/invite/8ZmFEtfUKM).

@@ -24,7 +24,6 @@
 
 * **Migration**
     * [From Pterodactyl (v1.x)](latest/migration/pterodactyl.md)
-    * [From Jexactyl (v2.x)](latest/migration/jexactyl.md)
 
 * **Additional Configuration**
     * [Discord Registration](latest/discord/oauth.md)

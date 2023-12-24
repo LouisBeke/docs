@@ -7,7 +7,7 @@
 Run the commands below in order to rebuild Jexactyl's frontend.
 
 ```bash
-cd /var/www/jexactyl
+cd /var/www/foxxnode
 
 # If building in a development environment:
 yarn watch

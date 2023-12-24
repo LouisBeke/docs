@@ -34,7 +34,7 @@ php artisan key:generate --force
 ***
 
 ### Configure Panel Environment
-Jexactyl uses CLI commands to configure most of the base settings of the Panel.
+foxxnode uses CLI commands to configure most of the base settings of the Panel.
 The following will allow you to set up general, database and mail settings.
 
 ```bash
@@ -46,7 +46,7 @@ php artisan p:environment:mail # Not required to run the Panel.
 ***
 
 ### Database Migration
-Now we need to set up all the base data for the Panel in the database you created earlier. The command below may take some time to run depending on your machine. Please **DO NOT exit the process** until it is completed! This command will set up the database tables and then add all the Nests & Eggs that power Jexactyl.
+Now we need to set up all the base data for the Panel in the database you created earlier. The command below may take some time to run depending on your machine. Please **DO NOT exit the process** until it is completed! This command will set up the database tables and then add all the Nests & Eggs that power foxxnode.
 
 ```bash
 php artisan migrate --seed --force
@@ -69,11 +69,11 @@ In order for the webserver you're using to access the Panel files, we'll need to
 with the `chown` command. Here's how to do this for all types of webservers:
 ```bash
 # If using NGINX or Apache (not on CentOS):
-chown -R www-data:www-data /var/www/jexactyl/*
+chown -R www-data:www-data /var/www/foxxnode/*
 
 # If using NGINX on CentOS:
-chown -R nginx:nginx /var/www/jexactyl/*
+chown -R nginx:nginx /var/www/foxxnode/*
 
 # If using Apache on CentOS:
-chown -R apache:apache /var/www/jexactyl/*
+chown -R apache:apache /var/www/foxxnode/*
 ```

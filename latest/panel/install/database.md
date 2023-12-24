@@ -16,8 +16,8 @@ line for things like multi-cluster deployments and load balancing databases.
 mysql -u root -p
 
 # Remember to change 'yourPassword' below to be a unique password
-CREATE USER 'jexactyl'@'127.0.0.1' IDENTIFIED BY 'yourPassword';
+CREATE USER 'foxxnode'@'127.0.0.1' IDENTIFIED BY 'yourPassword';
 CREATE DATABASE panel;
-GRANT ALL PRIVILEGES ON panel.* TO 'jexactyl'@'127.0.0.1' WITH GRANT OPTION;
+GRANT ALL PRIVILEGES ON panel.* TO 'foxxnode'@'127.0.0.1' WITH GRANT OPTION;
 exit
 ```

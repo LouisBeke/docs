@@ -1,6 +1,6 @@
-# Jexactyl <small>3.x</small>
+# foxxnode <small>3.x</small>
 
-> The documentation for Jexactyl.
+> The documentation for foxxnode.
 
 [Get Started](/README.md)
-[Discord](https://discord.com/invite/qttGR4Z5Pk)
+[Discord](https://discord.com/invite/8ZmFEtfUKM)
