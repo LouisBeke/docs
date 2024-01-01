@@ -22,7 +22,7 @@ Then, you can extract it using the `tar` command and assign permissions using `c
 to the `storage/*` and `bootstrap/cache` directories in order to allow the site to cache objects and load faster.
 
 ```bash
-curl -Lo panel.tar.gz https://github.com/foxxnode/foxxnode/releases/latest/download/panel.tar.gz
+curl -Lo panel.tar.gz https://github.com/foxxnode/panel/releases/latest/download/panel.tar.gz
 tar -xzvf panel.tar.gz
 chmod -R 755 storage/* bootstrap/cache/
 ```
